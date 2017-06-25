@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-title>WorkCheckin</ion-title>
+  <ion-list-header>Controle de horas</ion-list-header>
+  <ion-item>
+    <ion-label>Entrada</ion-label>
+    <ion-datetime displayFormat="HH:mm " pickerFormat="h mm " [(ngModel)]="registro.entrada"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Intervalo</ion-label>
+    <ion-datetime displayFormat="HH:mm " pickerFormat="h mm " [(ngModel)]="registro.intervalo"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Retorno</ion-label>
+    <ion-datetime displayFormat="HH:mm " pickerFormat="h mm " [(ngModel)]="registro.retorno"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Saída</ion-label>
+    <ion-datetime displayFormat="HH:mm " pickerFormat="h mm " [(ngModel)]="registro.saida"></ion-datetime>
+  </ion-item>
+  <ion-item></ion-item>
+  <ion-item>
+    <ion-label color="danger">Extra</ion-label>
+    <ion-datetime displayFormat="HH:mm " pickerFormat="h mm " [(ngModel)]="registro.extra"></ion-datetime>
+  </ion-item>
+</ion-content>
